@@ -27,36 +27,46 @@ body {
 
 /* Content below the Criipto Verify frame*/
 
-#description p:nth-child(1) .lang-:after {
-  content: "Log ind med brugernavn";
-}
-
 #description p:nth-child(1) .lang-en:after {
-  content: "Log in with username";
+  content: "Create login";
 }
 
-#description p:nth-child(2) .lang-:after {
+#description p:nth-child(1) .lang-da:after {
   content: "Opret login";
 }
 
 #description p:nth-child(2) .lang-en:after {
-  content: "Create login";
+  content: "Log in with username";
+}
+
+#description p:nth-child(1) .lang-da:after {
+  content: "Log ind med brugernavn";
+}
+
+#description p:nth-child(1),
+#description p:nth-child(2) {
+  display: block;
+  color: white;
+  font-weight: 500;
+  transition: font-weight 0.2s ease-in-out 0.2s;
+}
+
+#description p:nth-child(n):hover {
+  font-weight: 600;
+}
+
+.broker #description {
+  font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 aside#description {
   text-align: center;
 }
 
-#description p:nth-child(1) #description p:nth-child(2) {
-  display: inline;
-  font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: #fcfcfc;
-}
-
 /********** eID chooser screen **********/
 
 @media (min-width: 750px) {
-  .broker .frame {
+  #frame {
     border-radius: 16px;
   }
 }
