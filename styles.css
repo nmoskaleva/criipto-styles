@@ -43,14 +43,15 @@ body {
   content: "Create login";
 }
 
-aside#description {
-  text-align: center;
-}
-
-#description p:nth-child(1) #description p:nth-child(2) {
-  display: inline;
+#description p:nth-child(1),
+#description p:nth-child(2) {
+  display: block;
   font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #fcfcfc;
+}
+
+aside#description {
+  text-align: center;
 }
 
 /* Fonts for buttons and text */
@@ -67,7 +68,7 @@ aside#description {
 /********** eID chooser screen **********/
 
 @media (min-width: 750px) {
-  #frame {
+  #frame .criipto-eid-selector {
     border-radius: 16px;
   }
 }
