@@ -1,7 +1,64 @@
-.broker.dknemid.broker.host-criipto-mitid-dk.auth {
-  background-color: rgb(141, 212, 253);
+.broker.host-criipto-mitid-dk.auth {
+  background-color: #002219;
 }
 
 .criipto-eid-selector .criipto-qr-code {
   background-color: white;
+}
+
+@media (min-width: 750px) {
+  #frame {
+    border-radius: 16px;
+  }
+}
+
+.criipto-eid-selector .criipto-qr-code {
+  background-color: #fcfcfc;
+}
+
+.criipto-eid-selector .criipto-eid-btn.criipto-cancel-btn {
+  background-color: #ccc;
+}
+
+/* Custom font for YouSee login screen*/
+#headline span::after {
+  font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #fcfcfc;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Content above the Criipto Verify frame */
+#headline .lang span {
+  display: none;
+}
+
+#headline .lang-da:after,
+#headline .lang-en:after {
+  content: "YouSee Login";
+}
+
+/* Fonts for buttons and text */
+
+.criipto-eid-selector .criipto-qr-code p,
+.criipto-eid-btn {
+  font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.criipto-eid-btn {
+  font-size: 16px;
+}
+
+@media (min-width: 750px) {
+  #frame .criipto-eid-selector {
+    border-radius: 16px;
+  }
+}
+
+.criipto-eid-selector .criipto-qr-code {
+  background-color: #fcfcfc;
+}
+
+.criipto-eid-selector .criipto-eid-btn.criipto-cancel-btn {
+  background-color: #ccc;
 }
