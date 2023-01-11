@@ -1,3 +1,7 @@
-body .broker .host-criipto-mitid-dk {
+.broker.dknemid.broker.host-criipto-mitid-dk.auth {
   background-color: rgb(141, 212, 253);
+}
+
+.criipto-eid-selector .criipto-qr-code {
+  background-color: white;
 }
