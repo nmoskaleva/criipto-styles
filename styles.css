@@ -53,10 +53,21 @@ aside#description {
   color: #fcfcfc;
 }
 
+/* Fonts for buttons and text */
+
+.criipto-eid-selector .criipto-qr-code p,
+.criipto-eid-btn {
+  font-family: "LFT Etica", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.criipto-eid-btn {
+  font-size: 16px;
+}
+
 /********** eID chooser screen **********/
 
 @media (min-width: 750px) {
-  .broker .frame {
+  #frame {
     border-radius: 16px;
   }
 }
